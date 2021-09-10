@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import styles from './SelectGender.module.scss';
+import SelectGenderDate from './SelectGenderDate';
 
 const SelectGender = () => {
   return (
@@ -20,7 +21,13 @@ const SelectGender = () => {
                 <label className={styles.genderLabel} htmlFor="male">
                   Male
                 </label>
-                <input className={styles.radio} type="radio" id="male" name="gender" checked />
+                <input
+                  className={styles.radio}
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  defaultChecked
+                />
               </div>
               <div className={styles.genderRadio}>
                 <label className={styles.genderLabel} htmlFor="female">
@@ -34,50 +41,9 @@ const SelectGender = () => {
           <div className={styles.date}>
             <h2 className={styles.dateTitle}>Date of Birth</h2>
             <div className={styles.dateWrapper}>
-              <select className={styles.dateForm} name="Month" id="">
-                <option value="jan">January</option>
-                <option value="feb">February</option>
-                <option value="mar">March</option>
-                <option value="apl">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="aug">August</option>
-                <option value="sep">September</option>
-                <option value="oct">October</option>
-                <option value="nov">November</option>
-                <option value="dec">December</option>
-              </select>
-
-              <select className={styles.dateForm} name="Month" id="">
-                <option value="jan">January</option>
-                <option value="feb">February</option>
-                <option value="mar">March</option>
-                <option value="apl">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="aug">August</option>
-                <option value="sep">September</option>
-                <option value="oct">October</option>
-                <option value="nov">November</option>
-                <option value="dec">December</option>
-              </select>
-
-              <select className={styles.dateForm} name="Month" id="">
-                <option value="jan">January</option>
-                <option value="feb">February</option>
-                <option value="mar">March</option>
-                <option value="apl">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="aug">August</option>
-                <option value="sep">September</option>
-                <option value="oct">October</option>
-                <option value="nov">November</option>
-                <option value="dec">December</option>
-              </select>
+              <SelectGenderDate />
+              <SelectGenderDate />
+              <SelectGenderDate />
             </div>
           </div>
           <Link to="/home-screen">

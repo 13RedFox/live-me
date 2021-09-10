@@ -1,0 +1,53 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 375px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.174) 0%,
+    rgba(55, 55, 55, 0.378) 56.25%,
+    rgba(47, 47, 47, 0.6) 98.95%
+  );
+  // border-radius: 20px;
+  padding: 20px 20px 116px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title {
+  font-size: 53px;
+  line-height: 55px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.desciption {
+  display: flex;
+  width: 100%;
+  max-width: 210px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 5px 16px 4px;
+  margin: 0 auto 47px;
+}

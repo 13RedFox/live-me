@@ -1,0 +1,109 @@
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 375px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.link {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: #007aff;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0.41px;
+  margin-bottom: 12px;
+}
+
+.desciption {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.41px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 66px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+}
+
+.input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  width: 100%;
+  color: #929292;
+  background: #f2f2f7;
+  border-radius: 6px;
+  border: none;
+  padding: 13px 14px;
+  margin-bottom: 12px;
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+.gender {
+  margin-bottom: 73px;
+}
+
+.genderToggle {
+  display: flex;
+  padding-left: 6px;
+}
+
+.genderName {
+  display: flex;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  color: rgba(0, 0, 0, 0.81);
+  padding-left: 6px;
+  margin-bottom: 15px;
+}
+
+.genderLabel {
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+}
+
+.genderRadio {
+  display: flex;
+  align-items: center;
+  margin-right: 41px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.radio {
+  margin-left: 14px;
+}
+
+.account {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.51);
+  text-align: center;
+}

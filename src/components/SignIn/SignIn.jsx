@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router';
 import Button from '../Button/Button';
+import { motion } from 'framer-motion';
 
 import styles from './SignIn.module.scss';
 
@@ -15,8 +16,13 @@ const SignIn = () => {
     history.push('/home-screen');
   };
 
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
-    <div className={styles.signIn}>
+    <motion.div className={styles.signIn} initial="hidden" animate="visible" variants={variants}>
       <div className={styles.wrapper}>
         <Link to="/" className={styles.link}>
           &#5176;&ensp;Back
@@ -58,7 +64,7 @@ const SignIn = () => {
           &ensp;Sign Up
         </Link>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

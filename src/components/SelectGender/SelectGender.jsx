@@ -1,12 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
-import styles from './SelectGender.module.scss';
 import SelectGenderDate from './SelectGenderDate';
+import { motion } from 'framer-motion';
+import styles from './SelectGender.module.scss';
 
 const SelectGender = () => {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
-    <div className={styles.selectGender}>
+    <motion.div
+      className={styles.selectGender}
+      initial="hidden"
+      animate="visible"
+      variants={variants}>
       <div className={styles.wrapper}>
         <form className={styles.form}>
           <div className={styles.content}>
@@ -51,7 +61,7 @@ const SelectGender = () => {
           </Link>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

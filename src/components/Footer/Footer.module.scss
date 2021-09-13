@@ -1,5 +1,7 @@
 .footer {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -10,10 +12,22 @@
 }
 
 .home {
+  $size: 42px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  svg {
+    width: 18px;
+    height: 19px;
+    fill: black;
+  }
 }
 
 .text {
@@ -34,4 +48,22 @@
   background-color: black;
   border-radius: 50%;
   border: 3px solid gray;
+  svg {
+    width: 18px;
+    height: 19px;
+  }
+}
+
+.selected {
+  $size: 42px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  svg {
+    width: 18px;
+    height: 19px;
+    fill: white;
+  }
 }

@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 12px;
+}
+
+.time {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.165px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 37.5px;
+}

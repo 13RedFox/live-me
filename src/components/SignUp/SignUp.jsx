@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 
 import styles from './SignUp.module.scss';
+import Header from '../Header/Header';
 
 const SignUp = () => {
   const { register, errors, handleSubmit } = useForm();
@@ -24,6 +25,7 @@ const SignUp = () => {
   return (
     <motion.div className={styles.signUp} initial="hidden" animate="visible" variants={variants}>
       <div className={styles.wrapper}>
+        <Header />
         <Link to="/" className={styles.link}>
           &#5176;&ensp;Back
         </Link>

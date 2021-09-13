@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import { motion } from 'framer-motion';
 
 import styles from './SignIn.module.scss';
+import Header from '../Header/Header';
 
 const SignIn = () => {
   const { register, errors, handleSubmit } = useForm();
@@ -24,6 +25,7 @@ const SignIn = () => {
   return (
     <motion.div className={styles.signIn} initial="hidden" animate="visible" variants={variants}>
       <div className={styles.wrapper}>
+        <Header />
         <Link to="/" className={styles.link}>
           &#5176;&ensp;Back
         </Link>

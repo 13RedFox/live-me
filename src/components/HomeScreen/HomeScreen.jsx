@@ -1,7 +1,8 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion';
-// import styles from './HomeScreen.module.scss';
+import Header from '../Header/Header';
+import styles from './HomeScreen.module.scss';
 
 const HomeScreen = () => {
   const variants = {
@@ -10,7 +11,8 @@ const HomeScreen = () => {
   };
 
   return (
-    <motion.div initial="hidden" animate="visible" variants={variants}>
+    <motion.div initial="hidden" animate="visible" variants={variants} className={styles.home}>
+      <Header />
       <h1>Home</h1>
       <Footer />
     </motion.div>

@@ -11,6 +11,7 @@ import SignUp from './components/SignUp/SignUp';
 import SelectGender from './components/SelectGender/SelectGender';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 import Screen from './components/Screen/Screen';
+import Profile from './components/Profile/Profile';
 
 
 const App = ({ AnimatePresence }) => {
@@ -51,6 +52,9 @@ const App = ({ AnimatePresence }) => {
       </Route>
       <Route path='/home-screen'>
         <HomeScreen />
+      </Route>
+      <Route path='/profile'>
+        <Profile />
       </Route>
 
     </Switch>

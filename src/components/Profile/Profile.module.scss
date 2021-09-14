@@ -33,6 +33,7 @@
   position: relative;
   width: 90px;
   height: 100px;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -58,4 +59,155 @@
     width: 19.5px;
     height: 19.5px;
   }
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.infoTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  margin: 0 0 9px;
+}
+
+.infoDescr {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 28px;
+}
+
+.btnLevel {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  background-color: black;
+  svg {
+    display: flex;
+    fill: #ffc107;
+    $size: 14px;
+    width: $size;
+    height: $size;
+    margin-right: 7px;
+  }
+}
+
+.level {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.165px;
+  color: white;
+}
+
+.btnLeadear {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  border: none;
+  svg {
+    $size: 14px;
+    width: $size;
+    height: $size;
+    margin-right: 4px;
+  }
+}
+
+.leader {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+// # STATISTIC
+
+.statisticWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  margin-bottom: 22px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+// # NAVIGATION
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navigationLink {
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapperIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  $size: 34px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  margin-bottom: 6px;
+  svg {
+    $size: 14px;
+    width: $size;
+    height: $size;
+  }
+}
+
+.navigationDescr {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  text-align: center;
 }
